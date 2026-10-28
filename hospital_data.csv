@@ -1,0 +1,5 @@
+Patient_ID,Patient_Name,Age,Gender,Department,Blood_Pressure,Cholesterol,Diagnosis
+P001,Aarav,45,Male,Cardiology,145,220,Hypertension
+P002,Priya,32,Female,Neurology,120,180,Migraine
+P003,Rahul,67,Male,Orthopedics,160,245,Arthritis
+P004,Ananya,28,Female,General,115,165,Fever
