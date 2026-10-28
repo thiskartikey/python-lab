@@ -25,8 +25,6 @@ def calculate_scores(*args, **kwargs):
     print("Assessment Details:", kwargs)
     return min_score, max_score, avg_score, grade_breakdown
 
-
-# Input scores from user
 user_scores = tuple(map(int, input("Enter grades separated by spaces: ").split()))
 
 min_val, max_val, avg_val, breakdown = calculate_scores(

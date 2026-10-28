@@ -2,17 +2,14 @@ import string
 
 def get_word_stats(raw_content):
     clean_content = raw_content.lower()
-    # Remove punctuation
     clean_content = clean_content.translate(str.maketrans("", "", string.punctuation))
     token_list = clean_content.split()
     word_count = len(token_list)
 
-    # Count word frequency
     freq_map = {}
     for token in token_list:
         freq_map[token] = freq_map.get(token, 0) + 1
 
-    # Detect palindromes
     palindrome_list = []
     for token in freq_map:
         if len(token) > 1 and token == token[::-1]:
@@ -46,7 +43,6 @@ else:
     print("Invalid choice.")
     exit()
 
-# Display analysis report
 print("\n========== TEXT ANALYSIS REPORT ==========")
 print("Total Words:", word_count)
 print("\nWord Frequency:")

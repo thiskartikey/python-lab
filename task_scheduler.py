@@ -9,7 +9,6 @@ while True:
 
     option = input("Enter your choice: ").strip()
 
-    # Add a new task
     if option == "1":
         title = input("Enter task name: ")
         urgency = input("Enter priority (high/low): ").strip().lower()
@@ -17,7 +16,6 @@ while True:
         task_list.append([title, urgency, is_ready])
         print("Task added successfully.")
 
-    # Execute runnable tasks using lazy evaluation
     elif option == "2":
         if not task_list:
             print("No tasks in the queue.")
@@ -28,7 +26,6 @@ while True:
         for task in task_list:
             t_name, t_priority, t_ready = task[0], task[1], task[2]
 
-            # Short-circuit / lazy evaluation with AND / OR
             if (t_ready == "yes" and t_priority == "high") or (t_ready == "yes" and t_priority == "low"):
                 print("Executing:", t_name)
             elif t_ready != "yes":
@@ -39,7 +36,6 @@ while True:
 
         task_list = pending_list
 
-    # Show pending tasks
     elif option == "3":
         if not task_list:
             print("No tasks in the queue.")
@@ -48,7 +44,6 @@ while True:
             for item in task_list:
                 print("Task:", item[0], "| Priority:", item[1], "| Ready:", item[2])
 
-    # Exit scheduler
     elif option == "4":
         print("Exiting Task Scheduler...")
         break

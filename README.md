@@ -1,6 +1,6 @@
 # Python Lab - BT CS 526
 
-Repository containing Python Lab practical programs by **Kartikey Rajbhar**.
+Repository containing Python Lab practical programs by **Kartikey Rajbhar** (Roll No: 241511).
 
 ## List of Programs
 
@@ -16,6 +16,11 @@ Repository containing Python Lab practical programs by **Kartikey Rajbhar**.
 | Program 8 | `grade_calculator.py` | Custom Flexible Student Grade & Statistics Calculator |
 | Program 9 | `text_anagram.py` | Text Anagram and Pattern Matcher Tool |
 | Program 10 | `inventory.py` | In-Memory Inventory Tracker with Dictionary Merging |
+| Program 11 | `turtle_pattern.py` | Interactive Turtle Pattern Generator and Fractal Renderer |
+| Program 12 | `image_filter.py` | Digital Image Filter and Color Converter Utility |
+| Program 13 | `banking_system.py` | Encapsulated Banking System with Inheritance Models |
+| Program 14 | `serialization_engine.py` | Object Persistence Engine via Serialization |
+| Program 15 | `shape_math.py` | Abstract Shape Math Engine with Operator Overloading |
 
 ## Execution
 Run each program using Python 3:
